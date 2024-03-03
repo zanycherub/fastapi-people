@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "age": 20,
+        "gender": "female",
+        "name": "Jane Doe"
+    },
+    {
+        "id": 2,
+        "age": 25,
+        "gender": "male",
+        "name": "John Doe"
+    },
+    {
+        "id": 3,
+        "age": 25,
+        "gender": "male",
+        "name": "Juan DelaCruz"
+    },
+    {
+        "id": 4,
+        "age": 40,
+        "gender": "female",
+        "name": "Juanita Pilagrosa"
+    },
+    {
+        "id": 5,
+        "age": 25,
+        "gender": "female",
+        "name": "Magdalena Ricaforte"
+    },
+    {
+        "id": 6,
+        "age": 20,
+        "gender": "female",
+        "name": "Janina Rosales"
+    },
+    {
+        "id": 7,
+        "age": 20,
+        "gender": "male",
+        "name": "Antonio Sanmiguel"
+    }
+]
