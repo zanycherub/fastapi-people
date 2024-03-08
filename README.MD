@@ -1,3 +1,9 @@
+## LOCAL TESTING
+1. Run the application using uvicorn, automatically reload when a change was done.
+    ```
+    uvicorn main:app --reload
+    ```
+    
 ## DOCKER DEPLOYMENT
 
 1. Build the Docker Image:
