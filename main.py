@@ -1,11 +1,10 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Request, Query
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+
 from pydantic import BaseModel
 from typing import Optional
 import json
-from fastapi.staticfiles import StaticFiles
-
-app = FastAPI(title="People's FastAPI App")
-app.mount("/", StaticFiles(directory="ui", html=True), name="index.html")
 
 db = './db/people.json'
     
@@ -14,6 +13,13 @@ class Person(BaseModel):
     name: str
     age: int
     gender: str
+
+app = FastAPI()
+app.mount("/static", StaticFiles(directory="static"), name="static")
+templates = Jinja2Templates(directory="templates")
+@app.get("/")
+def read_root(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
 
 def get_people():
     with open(db, 'r') as f:
