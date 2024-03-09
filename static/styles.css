@@ -1,0 +1,14 @@
+/* styles.css */
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+.navbar-custom {
+    background-color: #123456;
+    color: white;
+}
